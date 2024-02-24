@@ -34,7 +34,7 @@ git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/l
 git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 #添加额外软件包
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 git clone https://github.com/vernesong/OpenClash.git package/OpenClash
