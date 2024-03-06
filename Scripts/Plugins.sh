@@ -17,12 +17,13 @@ git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git ./pw_packages
 
-# git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
-# git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git
+git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
+git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git
 
 
 #预置OpenClash内核和GEO数据
 export CORE_VER=https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version
+
 export CORE_TUN=https://github.com/vernesong/OpenClash/raw/core/dev/premium/clash-linux
 export CORE_DEV=https://github.com/vernesong/OpenClash/raw/core/dev/dev/clash-linux
 export CORE_MATE=https://github.com/vernesong/OpenClash/raw/core/dev/meta/clash-linux
