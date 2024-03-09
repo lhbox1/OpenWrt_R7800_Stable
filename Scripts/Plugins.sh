@@ -17,8 +17,8 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git ./pw_packages
 
-git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
-git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git
+#git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
+#git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git
 
 
 #预置OpenClash内核和GEO数据
@@ -53,3 +53,49 @@ tar -zxf ./meta.tar.gz && mv ./clash ./clash_meta
 #tar -zxf ./dev.tar.gz
 
 chmod +x ./clash* ; rm -rf ./*.gz
+
+
+#下载使用master版本openclash
+wget  -qO- https://github.com/vernesong/OpenClash/archive/master.zip > temp.zip
+unzip -q temp.zip
+cp -r OpenClash-master/luci-app-openclash package/
+rm -rf OpenClash-master
+rm -rf temp.zip
+
+#kenzok8下载使用master版本packages
+#https://github.com/xiaorouji/openwrt-passwall/archive/main.zip
+wget  -qO- https://github.com/kenzok8/small/archive/master.zip > temp2.zip
+wget  -qO- https://github.com/kenzok8/openwrt-packages/archive/master.zip > temp3.zip
+
+
+unzip -q temp2.zip
+unzip -q temp3.zip
+cp -r openwrt-packages-master/luci-app-adguardhome package/
+cp -r openwrt-packages-master/adguardhome package/
+cp -r openwrt-packages-master/luci-app-alist package/
+cp -r openwrt-packages-master/alist package/
+cp -r openwrt-packages-master/luci-app-ddns-go package/
+cp -r openwrt-packages-master/ddns-go package/
+cp -r openwrt-packages-master/luci-app-smartdns package/
+cp -r openwrt-packages-master/smartdns package/
+
+
+cp -r small-master/luci-app-ssr-plus package/
+cp -r small-master/luci-app-passwall package/
+cp -r small-master/luci-app-passwall2 package/
+cp -r small-master/dns2socks package/
+cp -r small-master/dns2tcp package/
+cp -r small-master/v2dat package/
+cp -r small-master/xray-core package/
+cp -r small-master/chinadns-ng package/
+cp -r small-master/sing-box package/
+cp -r small-master/luci-app-mosdns package/
+cp -r small-master/mosdns package/
+
+
+rm -rf openwrt-packages-master
+rm -rf temp2.zip
+rm -rf small-master
+rm -rf temp3.zip
+
+
