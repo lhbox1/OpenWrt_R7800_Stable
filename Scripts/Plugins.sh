@@ -20,7 +20,7 @@ git clone --depth=1 --single-branch --branch "main" https://github.com/kenzok8/o
 
 git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
 git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall2.git
-git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git
+git clone --depth=1 --single-branch --branch "master" https://github.com/xiaorouji/openwrt-passwall-packages.git
 
 #预置OpenClash内核和GEO数据
 export CORE_VER=https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version
