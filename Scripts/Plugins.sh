@@ -16,7 +16,7 @@ git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/
 #Pass Wall
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git ./pw_packages
-git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/openwrt-packages.git
+#git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/openwrt-packages.git
 
 git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
 git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall2.git
