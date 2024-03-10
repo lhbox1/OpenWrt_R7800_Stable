@@ -1,10 +1,10 @@
 #想定制自己想要的插件随意！
 #路由器插件自定义区Applications
 
-#CONFIG_PACKAGE_luci-app-adguardhome=y
-#CONFIG_PACKAGE_adguardhome=y
-#CONFIG_PACKAGE_luci-i18n-adguardhome-zh-cn=y
-#CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary=y
+CONFIG_PACKAGE_luci-app-adguardhome=y
+CONFIG_PACKAGE_adguardhome=y
+CONFIG_PACKAGE_luci-i18n-adguardhome-zh-cn=y
+CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary=y
 
 CONFIG_PACKAGE_luci-app-alist=y
 CONFIG_PACKAGE_alist=y
@@ -13,27 +13,28 @@ CONFIG_PACKAGE_alist=y
 
 CONFIG_PACKAGE_luci-app-openclash=y
 #CONFIG_PACKAGE_luci-app-ssr-plus=y
-#CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-passwall=y
 
-CONFIG_PACKAGE_luci-app-passwall2=y
-#CONFIG_PACKAGE_sing-box=y
+#CONFIG_PACKAGE_luci-app-passwall2=y
+CONFIG_PACKAGE_sing-box=y
 CONFIG_PACKAGE_xray-core=y
 
-#CONFIG_PACKAGE_luci-app-ddns-go=y
+CONFIG_PACKAGE_luci-app-ddns-go=y
+
 #CONFIG_PACKAGE_luci-app-dockerman=y
 
 
 
 
 
-#CONFIG_DEFAULT_luci-app-samba4=y
-#CONFIG_PACKAGE_autosamba=y
-#CONFIG_PACKAGE_samba4-libs=y
-#CONFIG_PACKAGE_samba4-server=y
-#CONFIG_SAMBA4_SERVER_WSDD2=y
-#CONFIG_SAMBA4_SERVER_NETBIOS=y
-#CONFIG_SAMBA4_SERVER_AVAHI=y
-#CONFIG_SAMBA4_SERVER_VFS=y
+CONFIG_DEFAULT_luci-app-samba4=y
+CONFIG_PACKAGE_autosamba=y
+CONFIG_PACKAGE_samba4-libs=y
+CONFIG_PACKAGE_samba4-server=y
+CONFIG_SAMBA4_SERVER_WSDD2=y
+CONFIG_SAMBA4_SERVER_NETBIOS=y
+CONFIG_SAMBA4_SERVER_AVAHI=y
+CONFIG_SAMBA4_SERVER_VFS=y
 
 
 
