@@ -12,17 +12,18 @@
 #git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
 #git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git
 #Open Clash
+
 git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
 #Pass Wall
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git ./pw_packages
 
 #git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/openwrt-packages.git
-git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/small.git
+#git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/small.git
 
-git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
-#git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall2.git
-#git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git
+#git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
+git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall2.git
+git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git
 
 #alit列表
 git clone --depth=1 --single-branch --branch "master" https://github.com/sbwml/luci-app-alist.git
