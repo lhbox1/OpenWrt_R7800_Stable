@@ -99,9 +99,9 @@ jobs:
 
           $GITHUB_WORKSPACE/Scripts/Settings.sh
 
-         # cd ./package
+          cd ./package
 
-         # $GITHUB_WORKSPACE/Scripts/Plugins.sh
+          $GITHUB_WORKSPACE/Scripts/Plugins.sh
 
       - name: Custom Settings
         run: |
