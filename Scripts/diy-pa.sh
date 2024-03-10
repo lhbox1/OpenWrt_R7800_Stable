@@ -1,10 +1,10 @@
 #
 #下载使用master版本openclash
-wget  -qO- https://github.com/vernesong/OpenClash/archive/master.zip > temp.zip
-unzip -q temp.zip
-cp -r OpenClash-master/luci-app-openclash package/
-rm -rf OpenClash-master
-rm -rf temp.zip
+#wget  -qO- https://github.com/vernesong/OpenClash/archive/master.zip > temp.zip
+#unzip -q temp.zip
+#cp -r OpenClash-master/luci-app-openclash package/
+#rm -rf OpenClash-master
+#rm -rf temp.zip
 
 #kenzok8下载使用master版本packages
 wget  -qO- https://github.com/xiaorouji/openwrt-passwall/archive/main.zip > temp1.zip
