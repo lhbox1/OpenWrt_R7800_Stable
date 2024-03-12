@@ -87,7 +87,7 @@ jobs:
           rm -rf ./feeds.conf.default
           cat $GITHUB_WORKSPACE/Config/feeds.conf.default >> feeds.conf.default
           
-          $GITHUB_WORKSPACE/Scripts/diy-pa.sh
+          #$GITHUB_WORKSPACE/Scripts/diy-pa.sh
           
           ./scripts/feeds update -a
           ./scripts/feeds install -a
