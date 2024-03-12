@@ -26,7 +26,7 @@ cp -r openwrt-passwall-main/luci-app-passwall package/
 #cp -r openwrt-packages-master/smartdns package/
 
 
-#cp -r small-master/luci-app-ssr-plus package/
+cp -r small-master/luci-app-ssr-plus package/
 
 #cp -r small-master/luci-app-passwall2 package/
 #cp -r small-master/dns2socks package/
