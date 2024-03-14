@@ -16,6 +16,9 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 #库1
 #git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git
 
+#
+git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
+
 
 #Open Clash
 
