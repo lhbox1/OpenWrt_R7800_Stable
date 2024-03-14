@@ -8,18 +8,18 @@
 #git clone --depth=1 --single-branch --branch $(echo $OWRT_URL | grep -iq "lede" && echo "18.06" || echo "master") https://github.com/jerrykuku/luci-theme-argon.git
 #git clone --depth=1 --single-branch --branch $(echo $OWRT_URL | grep -iq "lede" && echo "18.06" || echo "master") https://github.com/jerrykuku/luci-app-argon-config.git
 #Linkease
-#git clone --depth=1 --single-branch https://github.com/linkease/istore.git
-#git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
-#git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git
+git clone --depth=1 --single-branch https://github.com/linkease/istore.git
+git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
+git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git
 
 
 #库1
-git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git
+#git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git
 
 
 #Open Clash
 
-#git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
+git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
 
 #Pass Wall
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
@@ -49,8 +49,8 @@ export GEO_MMDB=https://github.com/alecthw/mmdb_china_ip_list/raw/release/lite/C
 export GEO_SITE=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geosite.dat
 export GEO_IP=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geoip.dat
 
-#cd ./OpenClash/luci-app-openclash/root/etc/openclash
-cd ./openwrt-packages/luci-app-openclash/root/etc/openclash
+cd ./OpenClash/luci-app-openclash/root/etc/openclash
+#cd ./openwrt-packages/luci-app-openclash/root/etc/openclash
 
 curl -sfL -o ./Country.mmdb $GEO_MMDB
 curl -sfL -o ./GeoSite.dat $GEO_SITE
