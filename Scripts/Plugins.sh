@@ -20,7 +20,6 @@
 #
 git clone --depth=1 --single-branch https://github.com/lhbox1/pakg.git
 
-
 #Open Clash
 
 git clone --depth=1 --single-branch --branch "master" https://github.com/vernesong/OpenClash.git
