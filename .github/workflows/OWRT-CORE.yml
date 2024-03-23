@@ -89,7 +89,7 @@ jobs:
 
       - name: Update Feeds
         run: |
-          cd ./wrt/
+          cd ./owrt/
 
           ./scripts/feeds update -a
           echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
