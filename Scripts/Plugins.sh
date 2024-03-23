@@ -18,7 +18,7 @@
 
 #luci-app-adguardhome
 #
-git clone --depth=1 --single-branch https://github.com/lhbox1/pakg.git
+#git clone --depth=1 --single-branch https://github.com/lhbox1/pakg.git
 
 #Open Clash
 
