@@ -59,3 +59,10 @@ cp -r pakg-main/luci-app-adguardhome package/
 #cp -r pakg-main/v2dat package/
 rm -rf temp3.zip
 rm -rf pakg-main
+
+#下载使用sbwml版本alist
+wget  -qO- https://github.com/sbwml/luci-app-alist/archive/master.zip > alist.zip
+unzip -q alist.zip
+cp -r luci-app-alist-master/luci-app-alist package/
+rm -rf alist.zip
+rm -rf luci-app-alist-master
