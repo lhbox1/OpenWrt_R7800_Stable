@@ -22,14 +22,14 @@
 
 #Open Clash
 
-git clone --depth=1 --single-branch --branch "master" https://github.com/vernesong/OpenClash.git
+#git clone --depth=1 --single-branch --branch "master" https://github.com/vernesong/OpenClash.git
 
 #Pass Wall
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall-packages.git ./pw_packages
 
 #库2
-#git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/openwrt-packages.git
+git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/openwrt-packages.git
 #git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/small.git
 
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git
@@ -53,8 +53,8 @@ export GEO_MMDB=https://github.com/alecthw/mmdb_china_ip_list/raw/release/lite/C
 export GEO_SITE=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geosite.dat
 export GEO_IP=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geoip.dat
 
-cd ./OpenClash/luci-app-openclash/root/etc/openclash
-#cd ./openwrt-packages/luci-app-openclash/root/etc/openclash
+#cd ./OpenClash/luci-app-openclash/root/etc/openclash
+cd ./openwrt-packages/luci-app-openclash/root/etc/openclash
 
 curl -sfL -o ./Country.mmdb $GEO_MMDB
 curl -sfL -o ./GeoSite.dat $GEO_SITE
