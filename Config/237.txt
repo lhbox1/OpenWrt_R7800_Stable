@@ -2,46 +2,28 @@
 #路由器插件自定义区Applications
 
 CONFIG_PACKAGE_luci-app-adguardhome=y
-CONFIG_PACKAGE_adguardhome=y
-CONFIG_PACKAGE_luci-i18n-adguardhome-zh-cn=y
-CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary=y
 CONFIG_PACKAGE_luci-app-alist=y
-CONFIG_PACKAGE_alist=y
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-ddns-go=y
-CONFIG_PACKAGE_ddns-go=y
-###########
-
-
-
 CONFIG_PACKAGE_luci-app-aria2=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
 
-CONFIG_PACKAGE_luci-app-easymesh=y
+
 
 CONFIG_PACKAGE_luci-app-eqos-mtk=y
-
 CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-firewall=y
-
 CONFIG_PACKAGE_luci-app-mtwifi-cfg=y
-
 CONFIG_PACKAGE_luci-app-mwan3=y
 CONFIG_PACKAGE_iptables-mod-tproxy=y
 CONFIG_PACKAGE_iptables-mod-extra=y
 CONFIG_PACKAGE_luci-app-opkg=y
-
 CONFIG_PACKAGE_luci-app-syncdial=y
-
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_TURBOACC_INCLUDE_NO_FASTPATH=y
 CONFIG_PACKAGE_luci-app-turboacc-mtk=y
-
-
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-usb-printer=y
-
-
 CONFIG_PACKAGE_luci-app-vsftpd=y
 
 CONFIG_PACKAGE_luci-app-webd_INCLUDE_WEBD_BINARY=y
