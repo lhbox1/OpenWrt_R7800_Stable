@@ -1,5 +1,5 @@
 #CI项目名
-name: CMCC-RAX3000M-Lede
+name: CMCC-RAX3000M
 
 on:
   #自动编译：每天早上4点
@@ -24,7 +24,7 @@ jobs:
       #默认主机名
       OWRT_NAME: RAX3000M
       #默认密码，仅作展示，更改无效
-      OWRT_PW: password
+      OWRT_PW: 无
       #默认地址
       OWRT_IP: 192.168.15.1
       #默认源码
