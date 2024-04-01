@@ -2,6 +2,13 @@
 name: OWRT-CORE
 
 on:
+  workflow_dispatch:
+    inputs:
+      USE_NX30PRO_EEPROM:
+      description: 'Use nx30pro eeprom'
+      required: true
+      default: false
+      type: boolean
   #公用核心标识
   workflow_call:
     inputs:
@@ -131,7 +138,16 @@ jobs:
           
 
           $GITHUB_WORKSPACE/Scripts/Extras.sh
-          make defconfig
+
+
+      - name: 设置是否使用 nx30pro eeprom
+        if: env.USE_NX30PRO_EEPROM == 'true'
+        run: |
+          mkdir openwrt/target/linux/mediatek/mt7981/base-files/lib/firmware
+          cp eeprom/nx30pro_eeprom.bin openwrt/target/linux/mediatek/mt7981/base-files/lib/firmware/MT7981_iPAiLNA_EEPROM.bin
+          sed -i 's/caldata_extract_mmc/# caldata_extract_mmc/' openwrt/target/linux/mediatek/mt7981/base-files/lib/preinit/90_extract_caldata
+          sed -i 's#./files/mt7981-default-eeprom/MT7981_iPAiLNA_EEPROM.bin##' openwrt/package/mtk/drivers/mt_wifi/Makefile
+          
       - name: Cleanup Toolchain
         run: |
           cd ./owrt
@@ -141,6 +157,7 @@ jobs:
       - name: Download Packages
         run: |
           cd ./owrt
+          make defconfig
 
           make download -j$(nproc)
 
