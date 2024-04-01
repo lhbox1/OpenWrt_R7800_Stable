@@ -68,7 +68,7 @@ jobs:
           echo "OWRT_TYPE=$OWRT_TYPE" >> $GITHUB_ENV
           echo "OWRT_PW=$OWRT_PW" >> $GITHUB_ENV
           echo "OWRT_IP=$OWRT_IP" >> $GITHUB_ENV
-          echo "USE_NX30PRO_EEPROM=${{ github.event.inputs.USE_NX30PRO_EEPROM }}" >> $GITHUB_ENV
+          
 
       - name: Check Scripts
         run: |
@@ -134,8 +134,7 @@ jobs:
           $GITHUB_WORKSPACE/Scripts/Extras.sh
 
 
-      - name: 设置是否使用 nx30pro eeprom
-        if: env.USE_NX30PRO_EEPROM == 'true'
+      - name: 设置使用 nx30pro eeprom
         run: |
           mkdir openwrt/target/linux/mediatek/mt7981/base-files/lib/firmware
           cp eeprom/nx30pro_eeprom.bin openwrt/target/linux/mediatek/mt7981/base-files/lib/firmware/MT7981_iPAiLNA_EEPROM.bin
