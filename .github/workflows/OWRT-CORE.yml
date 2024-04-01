@@ -2,13 +2,6 @@
 name: OWRT-CORE
 
 on:
-  workflow_dispatch:
-    inputs:
-      USE_NX30PRO_EEPROM:
-      description: 'Use nx30pro eeprom'
-      required: true
-      default: false
-      type: boolean
   #公用核心标识
   workflow_call:
     inputs:
