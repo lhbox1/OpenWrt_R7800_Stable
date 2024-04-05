@@ -23,9 +23,6 @@ CONFIG_PACKAGE_luci-i18n-adguardhome-zh-cn=y
 CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary=y
 
 ## 插件
-#CONFIG_PACKAGE_luci-app-istorex=y
-#CONFIG_PACKAGE_luci-app-quickstart=y
-#CONFIG_PACKAGE_luci-app-store=y
 
 CONFIG_PACKAGE_luci-app-alist=y
 CONFIG_PACKAGE_alist=y
@@ -47,22 +44,15 @@ CONFIG_PACKAGE_luci-app-autoreboot=y
 
 
 
-
+CONFIG_PACKAGE_luci-app-diskman-mtk=y
 CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
 CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
 
 
 
 CONFIG_PACKAGE_luci-app-easymesh=y
-
-CONFIG_PACKAGE_luci-app-eqos-mtk=y
-
 CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-firewall=y
-
-
-CONFIG_PACKAGE_luci-app-guest-wifi=y
-
 CONFIG_PACKAGE_luci-app-mtwifi-cfg=y
 
 CONFIG_PACKAGE_luci-app-mwan3=y
