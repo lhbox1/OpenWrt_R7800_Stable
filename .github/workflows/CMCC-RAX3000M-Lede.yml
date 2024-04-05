@@ -28,8 +28,8 @@ jobs:
       #默认地址
       OWRT_IP: 192.168.15.1
       #默认源码
-      OWRT_URL: https://github.com/hanwckf/immortalwrt-mt798x.git
+      #OWRT_URL: https://github.com/hanwckf/immortalwrt-mt798x.git
       ##237源码
-      #OWRT_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+      OWRT_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
 
       
