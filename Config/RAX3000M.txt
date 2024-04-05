@@ -5,7 +5,10 @@ CONFIG_TARGET_mediatek_mt7981=y
 #CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m-emmc"
 ##rax3000m-emmc需取消autosamba
 CONFIG_PACKAGE_autosamba=y
+
 CONFIG_PACKAGE_luci-app-ksmbd=n
+CONFIG_PACKAGE_luci-app-wrtbwmon=n
+
 CONFIG_PACKAGE_luci-app-diskman=y
 
 #
