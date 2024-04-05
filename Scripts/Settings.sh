@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #删除冲突插件
-rm -rf $(find ./feeds/luci/ -type d -regex ".*\(alist\|openclash\).*")
+rm -rf $(find ./feeds/luci/ -type d -regex ".*\(alist\|openclash\|easymesh\).*")
 rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd-alt,miniupnpd-iptables,wireless-regdb}
 #修改默认主题
 #sed -i "s/luci-theme-bootstrap/luci-theme-$OWRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
@@ -20,3 +20,4 @@ if [[ $OWRT_URL == *"lede"* ]] ; then
 fi
 #添加插件
 git clone https://github.com/lhbox1/luci-app-adguardhome package/luci-app-adguardhome
+git clone https://github.com/shuishihan/luci-app-easymesh.git package/luci-app-easymesh
