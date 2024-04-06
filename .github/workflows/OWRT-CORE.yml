@@ -60,7 +60,7 @@ jobs:
         run: |
           export OWRT_DATE=$(TZ=UTC-8 date +"%y.%m.%d_%H.%M.%S")
           export OWRT_SOURCE=$(echo $OWRT_URL | cut -d '/' -f 5-)
-          export OWRT_TYPE=$(sed -n "1{s/^#//;s/\r$//;p;q}" $GITHUB_WORKSPACE/Config/$mtwifi-cfg.config)
+          export OWRT_TYPE=$(sed -n "1{s/^#//;s/\r$//;p;q}" $GITHUB_WORKSPACE/Config/$RAX3000M.txt)
 
           echo "OWRT_SOURCE=$OWRT_SOURCE" >> $GITHUB_ENV
 
@@ -129,7 +129,9 @@ jobs:
           rm -rf ./tmp* ./.config*
           
           ##配置文件
-          cat $GITHUB_WORKSPACE/Config/mtwifi-cfg.config >> .config
+          #cat $GITHUB_WORKSPACE/Config/mtwifi-cfg.config >> .config
+
+          cat $GITHUB_WORKSPACE/Config/RAX3000M.txt >> .config
           
           #cat $GITHUB_WORKSPACE/Config/237.txt >> .config
           
@@ -145,11 +147,11 @@ jobs:
           sed -i 's/caldata_extract_mmc/# caldata_extract_mmc/' owrt/target/linux/mediatek/mt7981/base-files/lib/preinit/90_extract_caldata
           sed -i 's#./files/mt7981-default-eeprom/MT7981_iPAiLNA_EEPROM.bin##' owrt/package/mtk/drivers/mt_wifi/Makefile
           
-      #- name: Cleanup Toolchain
-      #  run: |
-       #   cd ./owrt
+      - name: Cleanup Toolchain
+        run: |
+          cd ./owrt
 
-       #   make dirclean
+          make dirclean
 
       - name: Download Packages
         run: |
