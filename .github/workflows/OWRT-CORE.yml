@@ -145,11 +145,11 @@ jobs:
           sed -i 's/caldata_extract_mmc/# caldata_extract_mmc/' owrt/target/linux/mediatek/mt7981/base-files/lib/preinit/90_extract_caldata
           sed -i 's#./files/mt7981-default-eeprom/MT7981_iPAiLNA_EEPROM.bin##' owrt/package/mtk/drivers/mt_wifi/Makefile
           
-      - name: Cleanup Toolchain
-        run: |
-          cd ./owrt
+      #- name: Cleanup Toolchain
+      #  run: |
+       #   cd ./owrt
 
-          make dirclean
+       #   make dirclean
 
       - name: Download Packages
         run: |
