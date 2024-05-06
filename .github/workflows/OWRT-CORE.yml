@@ -122,6 +122,7 @@ jobs:
 
       - name: Custom Settings
         run: |
+          [ -e $GITHUB_WORKSPACE/Config/files ] && mv $GITHUB_WORKSPACE/Config/files owrt/files
           cd ./owrt
 
           rm -rf ./tmp* ./.config*
@@ -133,8 +134,6 @@ jobs:
           
           #cat $GITHUB_WORKSPACE/Config/237.txt >> .config
           
-          
-
           $GITHUB_WORKSPACE/Scripts/Extras.sh
 
 
