@@ -89,11 +89,11 @@ jobs:
         run: |
           rm -rf ./feeds.conf.default
           cat $GITHUB_WORKSPACE/Config/feeds.conf.default >> feeds.conf.default
-      - name: 自定义脚本
-        run: |
-          cd ./owrt
-          #自定义插件
-          $GITHUB_WORKSPACE/Scripts/diy-pa.sh
+     # - name: 自定义脚本
+     #   run: |
+     #     cd ./owrt
+     #     #自定义插件
+     #     $GITHUB_WORKSPACE/Scripts/diy-pa.sh
 
       - name: Update Feeds
         run: |
