@@ -99,8 +99,7 @@ jobs:
         run: |
           cd ./owrt
           ./scripts/feeds update -a && ./scripts/feeds install -a
-          rm -rf feeds/packages/lang/golang
-          git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+          
           ##istore包
          # echo >> feeds.conf.default
          # echo 'src-git helloworld https://github.com/fw876/helloworld;master' >> feeds.conf.default
