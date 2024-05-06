@@ -22,7 +22,7 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 
 #Open Clash
 
-git clone --depth=1 --single-branch --branch "master" https://github.com/vernesong/OpenClash.git
+git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
 
 #Pass Wall
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
@@ -63,8 +63,8 @@ curl -sfL -o ./GeoIP.dat $GEO_IP
 
 mkdir ./core && cd ./core
 
-#curl -sfL -o ./tun.gz "$CORE_TUN"-"$CORE_TYPE"-"$TUN_VER".gz
-#gzip -d ./tun.gz && mv ./tun ./clash_tun
+curl -sfL -o ./tun.gz "$CORE_TUN"-"$CORE_TYPE"-"$TUN_VER".gz
+gzip -d ./tun.gz && mv ./tun ./clash_tun
 
 curl -sfL -o ./meta.tar.gz "$CORE_MATE"-"$CORE_TYPE".tar.gz
 tar -zxf ./meta.tar.gz && mv ./clash ./clash_meta
