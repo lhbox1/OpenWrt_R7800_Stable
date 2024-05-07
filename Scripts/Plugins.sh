@@ -45,7 +45,7 @@ export CORE_VER=https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/c
 
 export CORE_TUN=https://github.com/vernesong/OpenClash/raw/core/master/premium/clash-linux
 export CORE_DEV=https://github.com/vernesong/OpenClash/raw/core/master/dev/clash-linux
-export CORE_MATE=https://github.com/vernesong/OpenClash/raw/core/dev/meta/clash-linux
+export CORE_MATE=https://github.com/vernesong/OpenClash/raw/core/master/meta/clash-linux
 
 export CORE_TYPE=arm64
 export TUN_VER=$(curl -sfL $CORE_VER | sed -n "2{s/\r$//;p;q}")
