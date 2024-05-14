@@ -2,11 +2,11 @@
 CONFIG_TARGET_mediatek=y
 CONFIG_TARGET_mediatek_mt7981=y
 
-CONFIG_TARGET_mediatek_mt7981_DEVICE_cmcc_rax3000m-emmc=y
-CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m-emmc"
+#CONFIG_TARGET_mediatek_mt7981_DEVICE_cmcc_rax3000m-emmc=y
+#CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m-emmc"
 
-#CONFIG_TARGET_mediatek_mt7981_DEVICE_cmcc_rax3000m=y
-#CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m"
+CONFIG_TARGET_mediatek_mt7981_DEVICE_cmcc_rax3000m=y
+CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m"
 
 
 ##rax3000m-emmc需取消autosamba
