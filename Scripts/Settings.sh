@@ -27,5 +27,5 @@ if [[ $OWRT_URL == *"lede"* ]] ; then
 fi
 #添加插件
 git clone https://github.com/sirpdboy/luci-app-ddns-go package/luci-app-ddns-go
-git clone https://github.com/lhbox1/luci-app-adguardhome package/luci-app-adguardhome
+git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
 git clone https://github.com/shuishihan/luci-app-easymesh.git package/luci-app-easymesh
