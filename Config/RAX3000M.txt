@@ -1,7 +1,7 @@
-###型号切换##
+
 CONFIG_TARGET_mediatek=y
 CONFIG_TARGET_mediatek_mt7981=y
-
+###型号切换##
 #CONFIG_TARGET_mediatek_mt7981_DEVICE_cmcc_rax3000m-emmc=y
 #CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m-emmc"
 
