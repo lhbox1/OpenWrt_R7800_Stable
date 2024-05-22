@@ -5,7 +5,8 @@ rm -rf $(find ./feeds/luci/ -type d -regex ".*\(ddns-go\|openclash\|passwall\|ss
 
 #rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd-alt,miniupnpd-iptables,wireless-regdb}
 rm -rf feeds/packages/net/ddns-go
-
+rm -rf feeds/packages/net/xray-core
+rm -rf feeds/packages/net/chinadns-ng
 rm -rf package/istore
 ####
 rm -rf feeds/packages/lang/golang
@@ -29,3 +30,6 @@ fi
 git clone https://github.com/sirpdboy/luci-app-ddns-go package/luci-app-ddns-go
 git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
 git clone https://github.com/shuishihan/luci-app-easymesh.git package/luci-app-easymesh
+git clone https://github.com/lhbox1/pakg.git package/pakggg
+
+
