@@ -189,7 +189,7 @@ jobs:
           body: |
 
             
-            RAX3000M 自用固件 ！
+            自用固件 ！
             
             源码：${{env.OWRT_URL}}
             平台：${{env.OWRT_TARGET}}
