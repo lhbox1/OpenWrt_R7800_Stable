@@ -15,7 +15,7 @@ config device
 
 config device
 	option name 'eth0'
-	option macaddr 'ec:e7:c2:90:2f:7b'
+	option macaddr 'b8:60:61:79:e6:5c'
 
 config interface 'lan'
 	option device 'br-lan'
@@ -26,7 +26,7 @@ config interface 'lan'
 
 config device
 	option name 'eth1'
-	option macaddr 'ec:e7:c2:90:2f:7c'
+	option macaddr 'b8:60:61:79:e6:59'
 
 config interface 'wan'
 	option device 'eth1'
@@ -53,4 +53,13 @@ config interface 'utun'
 	option ifname 'utun'
 	option device 'utun'
 	option auto '0'
+
+config interface 'docker'
+	option device 'docker0'
+	option proto 'none'
+	option auto '0'
+
+config device
+	option type 'bridge'
+	option name 'docker0'
 
