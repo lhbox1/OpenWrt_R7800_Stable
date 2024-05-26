@@ -9,7 +9,7 @@ CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m"
 #CONFIG_TARGET_mediatek_mt7981_DEVICE_cmcc_rax3000m-emmc=y
 #CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m-emmc"
 
-CONFIG_PACKAGE_luci-app-mosdns=y
+#CONFIG_PACKAGE_luci-app-mosdns=y
 #CONFIG_PACKAGE_luci-app-smartdns=y
 #CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
 #CONFIG_PACKAGE_luci-app-qbittorrent=y
