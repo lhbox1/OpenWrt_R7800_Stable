@@ -61,13 +61,13 @@ curl -sfL -o ./GeoIP.dat $GEO_IP
 
 mkdir ./core && cd ./core
 
-curl -sfL -o ./tun.gz "$CORE_TUN"-"$CORE_TYPE"-"$TUN_VER".gz
-gzip -d ./tun.gz && mv ./tun ./clash_tun
+#curl -sfL -o ./tun.gz "$CORE_TUN"-"$CORE_TYPE"-"$TUN_VER".gz
+#gzip -d ./tun.gz && mv ./tun ./clash_tun
 
 curl -sfL -o ./meta.tar.gz "$CORE_MATE"-"$CORE_TYPE".tar.gz
 tar -zxf ./meta.tar.gz && mv ./clash ./clash_meta
 
-curl -sfL -o ./dev.tar.gz "$CORE_DEV"-"$CORE_TYPE".tar.gz
-tar -zxf ./dev.tar.gz
+#curl -sfL -o ./dev.tar.gz "$CORE_DEV"-"$CORE_TYPE".tar.gz
+#tar -zxf ./dev.tar.gz
 
 chmod +x ./clash* ; rm -rf ./*.gz
