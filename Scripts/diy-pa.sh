@@ -8,12 +8,12 @@
 
 #下载使用master版本passwall
 #wget -qO- https://github.com/xiaorouji/openwrt-passwall/archive/main.zip > temp1.zip
-wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall/zip/refs/tags/4.77-5 > temp1.zip
+wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall/zip/refs/tags/4.77-6 > temp1.zip
 unzip -q temp1.zip
 rm -rf feeds/luci/applications/luci-app-passwall
-cp -r openwrt-passwall-4.77-5/luci-app-passwall package/
+cp -r openwrt-passwall-4.77-6/luci-app-passwall package/
 rm -rf temp1.zip
-rm -rf openwrt-passwall-4.77-5
+rm -rf openwrt-passwall-4.77-6
 
 #下载使用helloworld依赖库ssr
 wget -qO- https://github.com/fw876/helloworld/archive/master.zip > temp2.zip
