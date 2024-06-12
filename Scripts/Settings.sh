@@ -35,4 +35,4 @@ git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatp
 
 
 
-git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+#git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
