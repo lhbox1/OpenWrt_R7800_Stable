@@ -33,6 +33,6 @@ git clone https://github.com/lhbox1/pakg.git package/pakggg
 
 git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
 
-
+git clone https://github.com/gdy666/luci-app-lucky.git package/luci-app-lucky
 
 #git clone --depth=1 --single-branch --branch "main" https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
