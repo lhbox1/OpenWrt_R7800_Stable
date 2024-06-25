@@ -6,6 +6,15 @@
 #rm -rf luci-app-alist-master
 
 
+#sirpdboy仓库
+wget  -qO- https://github.com/sirpdboy/sirpdboy-package/archive/main.zip > sirpdboy.zip
+unzip -q sirpdboy.zip
+cp -r sirpdboy-package-main/luci-app-adguardhome package/
+cp -r sirpdboy-package-main/luci-app-lucky package/
+rm -rf sirpdboy.zip
+rm -rf sirpdboy-package-main
+
+
 #下载使用master版本passwall
 #wget -qO- https://github.com/xiaorouji/openwrt-passwall/archive/main.zip > temp1.zip
 wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall/zip/refs/tags/4.77-6 > temp1.zip
