@@ -7,13 +7,7 @@
 
 
 #sirpdboy仓库
-wget  -qO- https://github.com/sirpdboy/luci-app-lucky/archive/main.zip > sirpdboy.zip
-wget  -qO- https://github.com/sirpdboy/luci-app-lucky/archive/main.zip > sirpdboy.zip
-unzip -q sirpdboy.zip
-cp -r luci-app-lucky-main/lucky package/
-cp -r luci-app-lucky-main/luci-app-lucky package/
-rm -rf sirpdboy.zip
-rm -rf sirpdboy-package-main
+
 
 
 #下载使用master版本passwall
