@@ -7,10 +7,11 @@
 
 
 #sirpdboy仓库
-wget  -qO- https://github.com/sirpdboy/sirpdboy-package/archive/main.zip > sirpdboy.zip
+wget  -qO- https://github.com/sirpdboy/luci-app-lucky/archive/main.zip > sirpdboy.zip
+wget  -qO- https://github.com/sirpdboy/luci-app-lucky/archive/main.zip > sirpdboy.zip
 unzip -q sirpdboy.zip
-cp -r sirpdboy-package-main/luci-app-adguardhome package/
-cp -r sirpdboy-package-main/luci-app-lucky package/
+cp -r luci-app-lucky-main/lucky package/
+cp -r luci-app-lucky-main/luci-app-lucky package/
 rm -rf sirpdboy.zip
 rm -rf sirpdboy-package-main
 
