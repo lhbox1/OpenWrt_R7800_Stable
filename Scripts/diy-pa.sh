@@ -2,8 +2,9 @@
 wget  -qO- https://codeload.github.com/gdy666/luci-app-lucky/zip/refs/tags/v2.10.5 > lucky.zip
 unzip -q lucky.zip
 cp -r luci-app-lucky-2.10.5/luci-app-lucky package/
+cp -r luci-app-lucky-2.10.5/lucky package/
 rm -rf lucky.zip
-rm -rf luci-app-alist-master
+rm -rf luci-app-lucky-2.10.5
 
 
 #sirpdboy仓库
