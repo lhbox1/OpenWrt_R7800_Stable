@@ -1,9 +1,9 @@
-#下载使用sbwml版本alist
-#wget  -qO- https://github.com/sbwml/luci-app-alist/archive/master.zip > alist.zip
-#unzip -q alist.zip
-#cp -r luci-app-alist-master/luci-app-alist package/
-#rm -rf alist.zip
-#rm -rf luci-app-alist-master
+#下载使用lucky
+wget  -qO- https://codeload.github.com/gdy666/luci-app-lucky/zip/refs/tags/v2.10.5 > lucky.zip
+unzip -q lucky.zip
+cp -r luci-app-lucky-2.10.5/luci-app-lucky package/
+rm -rf lucky.zip
+rm -rf luci-app-alist-master
 
 
 #sirpdboy仓库
