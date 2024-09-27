@@ -10,3 +10,4 @@
   #echo "CONFIG_PACKAGE_luci=y" >> .config
   #echo "CONFIG_LUCI_LANG_zh_Hans=y" >> .config
 #fi
+chmod +x files/etc/wan_check.sh
