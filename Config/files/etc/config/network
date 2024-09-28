@@ -36,7 +36,7 @@ config interface 'lan'
 
 config device
 	option name 'wan'
-	option macaddr 'ec:e7:c2:90:2f:7c'
+	option macaddr 'ec:e7:c2:90:2f:79'
 
 config interface 'wan'
 	option device 'wan'
