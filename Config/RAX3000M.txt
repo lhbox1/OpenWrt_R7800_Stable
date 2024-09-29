@@ -7,6 +7,7 @@ CONFIG_TARGET_PROFILE="DEVICE_cmcc_rax3000m"
 
 CONFIG_PACKAGE_luci-app-smartdns=y
 CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_sing-box=y
 
 #CONFIG_PACKAGE_luci-app-ksmbd=n
 CONFIG_PACKAGE_luci-app-wrtbwmon=n
