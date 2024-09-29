@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #删除冲突插件
-#rm -rf $(find ./feeds/luci/ -type d -regex ".*\(ddns-go\|openclash\|passwall\|ssr-plus\|wechatpush\|alist\|easymesh\).*")
+rm -rf $(find ./feeds/luci/ -type d -regex ".*\(openclash\|passwall\|ssr-plus\|alist\|easymesh\).*")
 rm -rf package/istore
 ####
 #修改默认IP地址
