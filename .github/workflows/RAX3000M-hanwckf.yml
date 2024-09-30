@@ -102,15 +102,6 @@ jobs:
         cd openwrt
         ./scripts/feeds update -a
         ./scripts/feeds install -a
-    - name: 自定义脚本
-      run: |
-        [ -e $GITHUB_WORKSPACE/Config/files ] && mv $GITHUB_WORKSPACE/Config/files openwrt/files
-        chmod +x Scripts/Plugins.sh
-        chmod +x Scripts/Extras.sh
-        cd openwrt
-        $GITHUB_WORKSPACE/Scripts/Extras.sh
-        cd ./package
-        $GITHUB_WORKSPACE/Scripts/Plugins.sh
         
     - name: 加载config & DIY_P2_SH
       run: |
@@ -118,6 +109,16 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        
+    - name: 自定义脚本
+      run: |
+        [ -e $GITHUB_WORKSPACE/Config/files ] && mv $GITHUB_WORKSPACE/Config/files openwrt/files
+        chmod +x Scripts/Plugins.sh
+        chmod +x Scripts/Extras.sh
+        cd openwrt
+        $GITHUB_WORKSPACE/Scripts/Extras.sh
+        cd package
+        $GITHUB_WORKSPACE/Scripts/Plugins.sh
         
     - name: 使用nx30pro的高功率eeprom
       run: |
