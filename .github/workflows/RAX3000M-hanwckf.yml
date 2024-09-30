@@ -104,6 +104,7 @@ jobs:
         ./scripts/feeds install -a
     - name: 自定义脚本
       run: |
+        [ -e $GITHUB_WORKSPACE/Config/files ] && mv $GITHUB_WORKSPACE/Config/files openwrt/files
         chmod +x Scripts/Plugins.sh
         chmod +x Scripts/Extras.sh
         cd openwrt
