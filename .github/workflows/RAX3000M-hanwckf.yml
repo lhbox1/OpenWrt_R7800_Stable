@@ -33,7 +33,11 @@ env:
   ##因为是两个设备，所以手动设置上传时候的打包名称和tag名称UPLOAD_TAG_NAME
   OPENWRT_NAME: hanwckf
   UPLOAD_TAG_NAME: rax3000m
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  
+  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  ##237源码
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+  
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: Config/feeds.conf.default
   CONFIG_FILE: Config/RAX3000M-hanwckf.config
