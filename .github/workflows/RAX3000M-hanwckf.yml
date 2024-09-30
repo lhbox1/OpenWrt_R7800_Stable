@@ -30,10 +30,14 @@ on:
 
 env:
   ###############手动修改##############
-  ##因为是两个设备，所以手动设置上传时候的打包名称和tag名称UPLOAD_TAG_NAME
   OPENWRT_NAME: hanwckf
   UPLOAD_TAG_NAME: rax3000m
-  
+  #默认主题
+  OWRT_THEME: argon
+  #默认主机名
+  OWRT_NAME: RAX3000M
+  #默认ip地址
+  OWRT_IP: 192.168.10.1
   #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   ##237源码
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
