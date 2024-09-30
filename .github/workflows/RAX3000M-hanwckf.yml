@@ -36,7 +36,7 @@ env:
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: Config/feeds.conf.default
-  CONFIG_FILE: Config/RAX3000M.txt
+  CONFIG_FILE: Config/RAX3000M-hanwckf.config
   DIY_P1_SH: Scripts/diy-pa.sh
   DIY_P2_SH: Scripts/Settings.sh
   SSH_ACTIONS: false
