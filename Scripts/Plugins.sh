@@ -12,6 +12,8 @@ git clone --depth=1 --single-branch https://github.com/linkease/istore.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git
 
+# lucky
+git clone --depth=1 --single-branch https://github.com/lgs2007m/immortalwrt-mt798x-luci/tree/openwrt-21.02/applications/luci-app-lucky
 
 #库1
 #git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git
