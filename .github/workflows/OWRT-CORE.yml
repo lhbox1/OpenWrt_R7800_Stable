@@ -88,7 +88,7 @@ jobs:
       - name: Load custom feeds
         run: |
           rm -rf ./owrt/feeds.conf.default
-          cat $GITHUB_WORKSPACE/Config/feeds.conf.default >> ./owrt/feeds.conf.default
+          cat $GITHUB_WORKSPACE/Config/1feeds.conf.default >> ./owrt/feeds.conf.default
       - name: 自定义脚本
         run: |
           cd ./owrt
