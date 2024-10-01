@@ -30,7 +30,8 @@ on:
 
 env:
   ###############手动修改##############
-  OPENWRT_NAME: hanwckf
+  #OPENWRT_NAME: hanwckf
+  OPENWRT_NAME: padavanonly
   UPLOAD_TAG_NAME: rax3000m
   #默认主题
   OWRT_THEME: argon
