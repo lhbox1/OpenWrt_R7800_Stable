@@ -30,8 +30,7 @@ on:
 
 env:
   ###############手动修改##############
-  #OPENWRT_NAME: hanwckf
-  OPENWRT_NAME: padavanonly
+  OPENWRT_NAME: hanwckf
   UPLOAD_TAG_NAME: rax3000m
   #默认主题
   OWRT_THEME: argon
@@ -245,7 +244,7 @@ jobs:
         else
                 echo "- 未编译luci-app-dockerman" >> release.txt
         fi
-        echo "release_tag=${{ env.FILE_DATE }}-${{ env.OPENWRT_NAME }}-${{ env.UPLOAD_TAG_NAME }}${{ env.EEPROM }}${{ env.WIFI_INTERFACE }}${{ env.BUILD_DOCKERMAN }}" >> $GITHUB_OUTPUT
+        echo "release_tag=${{ env.FILE_DATE }}-${{ env.UPLOAD_TAG_NAME }}${{ env.EEPROM }}${{ env.WIFI_INTERFACE }}${{ env.BUILD_DOCKERMAN }}" >> $GITHUB_OUTPUT
         echo "status=success" >> $GITHUB_OUTPUT
         
     - name: 发布固件至Release
