@@ -5,10 +5,6 @@
 ##########################
 # 添加执行权限
 # chmod +x /etc/wan_check.sh
-
-chmod +x openwrt/files/etc/wan_check.sh
-
-
 # */5 * * * * /etc/wan_check.sh
 # 定义日志文件路径
 LOG_FILE="/var/log/auto_restart_wan.log"
