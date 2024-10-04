@@ -1,5 +1,5 @@
 #CI项目名
-name: CMCC-RAX3000M
+name: CMCC-RAX3000M-hanwckf
 
 on:
   #自动编译：每天早上4点
@@ -28,8 +28,6 @@ jobs:
       #默认地址
       OWRT_IP: 192.168.10.1
       #默认源码
-      #OWRT_URL: https://github.com/hanwckf/immortalwrt-mt798x.git
-      ##237源码
-      OWRT_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+      OWRT_URL: https://github.com/hanwckf/immortalwrt-mt798x.git
 
       
