@@ -33,6 +33,13 @@ env:
   #OPENWRT_NAME: padavanonly
   OPENWRT_NAME: hanwckf
   
+  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  ##237源码
+  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+
+  #CONFIG_FILE: Config/RAX3000M-hanwckf.config
+  CONFIG_FILE: Config/RAX3000M.txt
+  
   UPLOAD_TAG_NAME: rax3000m
   #默认主题
   OWRT_THEME: argon
@@ -40,13 +47,8 @@ env:
   OWRT_NAME: RAX3000M
   #默认ip地址
   OWRT_IP: 192.168.10.1
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
-  ##237源码
-  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
-  
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: Config/feeds.conf.default
-  CONFIG_FILE: Config/RAX3000M-hanwckf.config
   DIY_P1_SH: Scripts/diy-pa.sh
   DIY_P2_SH: Scripts/Settings.sh
   SSH_ACTIONS: false
@@ -115,8 +117,8 @@ jobs:
         
     - name: 加载config & DIY_P2_SH
       run: |
-        #[ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        cat $GITHUB_WORKSPACE/Config/RAX3000M.txt >> openwrt/.config
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        #cat $GITHUB_WORKSPACE/Config/RAX3000M.txt >> openwrt/.config
        
         chmod +x $DIY_P2_SH
         cd openwrt
