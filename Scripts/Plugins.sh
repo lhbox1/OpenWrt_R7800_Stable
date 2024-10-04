@@ -63,8 +63,15 @@ mkdir ./core && cd ./core
 #curl -sfL -o ./tun.gz "$CORE_TUN"-"$CORE_TYPE"-"$TUN_VER".gz
 #gzip -d ./tun.gz && mv ./tun ./clash_tun
 
-curl -sfL -o ./meta.tar.gz "$CORE_MATE"-"$CORE_TYPE".tar.gz
-tar -zxf ./meta.tar.gz && mv ./clash ./clash_meta
+
+curl -sL -m 30 --retry 2 https://raw.githubusercontent.com/lhbox1/Actions-OpenWrt/main/CMCC-RAX3000M-EMMC/clash1.tar.gz -o ./clash1.tar.gz
+tar -zxf ./clash1.tar.gz
+rm -rf clash
+rm -rf clash_tun
+
+
+#curl -sfL -o ./meta.tar.gz "$CORE_MATE"-"$CORE_TYPE".tar.gz
+#tar -zxf ./meta.tar.gz && mv ./clash ./clash_meta
 
 #curl -sfL -o ./dev.tar.gz "$CORE_DEV"-"$CORE_TYPE".tar.gz
 #tar -zxf ./dev.tar.gz
