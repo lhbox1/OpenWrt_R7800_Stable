@@ -30,12 +30,12 @@ on:
 
 env:
   ###############手动修改##############
-  #OPENWRT_NAME: padavanonly
-  OPENWRT_NAME: hanwckf
+  OPENWRT_NAME: padavanonly
+  #OPENWRT_NAME: hanwckf
   
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   ##237源码
-  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
 
   #CONFIG_FILE: Config/RAX3000M-hanwckf.config
   CONFIG_FILE: Config/RAX3000M.txt
