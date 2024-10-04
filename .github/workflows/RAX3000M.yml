@@ -131,7 +131,8 @@ jobs:
         if [[ $REPO_URL != *"padavanonly"* ]] ; then
         #增加luci界面
         echo "CONFIG_PACKAGE_luci-app-ksmbd=n" >> openwrt/.config
-
+        echo "CONFIG_PACKAGE_luci-app-samba4=n" >> openwrt/.config
+        
         mv Config/network openwrt/files/etc/config/network
         #rm -rf openwrt/files/etc/config/network
         fi
