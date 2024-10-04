@@ -115,8 +115,9 @@ jobs:
         
     - name: 加载config & DIY_P2_SH
       run: |
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        # cat $GITHUB_WORKSPACE/Config/RAX3000M.txt >> openwrt/.config
+        #[ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        cat $GITHUB_WORKSPACE/Config/RAX3000M.txt >> openwrt/.config
+       
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
@@ -124,6 +125,12 @@ jobs:
     - name: 自定义脚本
       run: |
         [ -e $GITHUB_WORKSPACE/Config/files ] && mv $GITHUB_WORKSPACE/Config/files openwrt/files
+        #根据源码来修改
+        if [[ $OWRT_URL != *"hanwckf"* ]] ; then
+        #增加luci界面
+        echo "CONFIG_PACKAGE_luci-app-ksmbd=n" >> openwrt/.config
+        rm -rf openwrt/files/etc/config/network
+        fi
         chmod +x Scripts/Plugins.sh
         chmod +x Scripts/Extras.sh
         cd openwrt
