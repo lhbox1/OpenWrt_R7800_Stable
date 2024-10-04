@@ -128,7 +128,7 @@ jobs:
       run: |
         [ -e $GITHUB_WORKSPACE/Config/files ] && mv $GITHUB_WORKSPACE/Config/files openwrt/files
         #根据源码来修改
-        if [[ $REPO_URL != *"hanwckf"* ]] ; then
+        if [[ $REPO_URL != *"padavanonly"* ]] ; then
         #增加luci界面
         echo "CONFIG_PACKAGE_luci-app-ksmbd=n" >> openwrt/.config
         rm -rf openwrt/files/etc/config/network
