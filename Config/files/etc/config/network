@@ -30,7 +30,7 @@ config device
 config interface 'lan'
 	option device 'br-lan'
 	option proto 'static'
-	option ipaddr '192.168.10.1'
+	option ipaddr '192.168.15.1'
 	option netmask '255.255.255.0'
 	option ip6assign '60'
 
@@ -40,7 +40,10 @@ config device
 
 config interface 'wan'
 	option device 'wan'
-	option proto 'dhcp'
+	option proto 'pppoe'
+	option username 'nbyza67579792'
+	option password '123456'
+	option ipv6 'auto'
 	option peerdns '0'
 	list dns '223.5.5.5'
 	list dns '119.29.29.29'
