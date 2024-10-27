@@ -4,6 +4,7 @@
 rm -rf $(find ./feeds/luci/ -type d -regex ".*\(openclash\|passwall\|ssr-plus\|alist\|easymesh\|adguardhome\).*")
 rm -rf package/istore
 rm -rf feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/xray-core
 #rm -rf feeds/packages/net/adguardhome
 ####
 #修改默认IP地址
