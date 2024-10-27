@@ -164,7 +164,7 @@ jobs:
       if: github.event.inputs.NO_DOCKERMAN == 'true'
       run: |
         cd openwrt
-        sed -i '/CONFIG_PACKAGE_luci-app-dockerman=y/d' .config
+        #sed -i '/CONFIG_PACKAGE_luci-app-dockerman=y/d' .config
         
     - name: SSH链接管理
       uses: P3TERX/ssh2actions@v1.0.0
