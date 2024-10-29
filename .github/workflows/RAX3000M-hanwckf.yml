@@ -17,7 +17,7 @@ on:
       LAN_IP:
         description: 'Set LAN IP Address'
         required: true
-        default: '192.168.15.15'
+        default: '192.168.15.199'
       WIFI_DRIVER:
         description: 'Choose WiFi Driver'
         required: true
@@ -66,7 +66,7 @@ env:
   #默认主机名
   OWRT_NAME: RAX3000M
   #默认ip地址
-  OWRT_IP: 192.168.15.15
+  OWRT_IP: 192.168.15.199
   
   CONFIG_FILE: Config/.mtwifi-cfg.config
 
