@@ -65,6 +65,9 @@ env:
 
   #默认主机名
   OWRT_NAME: RAX3000M
+  #默认ip地址
+  OWRT_IP: 192.168.15.111
+  
   CONFIG_FILE: Config/.mtwifi-cfg.config
   
   OPENWRT_NAME: hanwckf
