@@ -69,10 +69,16 @@ env:
   OWRT_IP: 192.168.15.111
   
   CONFIG_FILE: Config/.mtwifi-cfg.config
+
+  ##237源码
+  OPENWRT_NAME: padavanonly
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+
   
-  OPENWRT_NAME: hanwckf
+  #OPENWRT_NAME: hanwckf
+  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  
   UPLOAD_TAG_NAME: rax3000m
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: Config/feeds.conf.default
   DIY_P1_SH: Scripts/diy-pa.sh
