@@ -37,8 +37,8 @@ env:
   ##237源码
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
 
-  #CONFIG_FILE: Config/RAX3000M-hanwckf.config
-  CONFIG_FILE: Config/RAX3000M1.txt
+  CONFIG_FILE: Config/RAX3000M-hanwckf.config
+  #CONFIG_FILE: Config/RAX3000M.txt
   
   UPLOAD_TAG_NAME: rax3000m
   #默认主题
