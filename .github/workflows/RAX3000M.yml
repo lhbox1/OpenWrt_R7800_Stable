@@ -46,7 +46,7 @@ env:
   #默认主机名
   OWRT_NAME: RAX3000M
   #默认ip地址
-  OWRT_IP: 192.168.15.111
+  OWRT_IP: 192.168.15.15
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: Config/feeds.conf.default
   DIY_P1_SH: Scripts/diy-pa.sh
