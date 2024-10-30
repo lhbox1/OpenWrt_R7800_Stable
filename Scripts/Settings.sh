@@ -6,6 +6,7 @@ rm -rf package/istore
 rm -rf feeds/packages/net/chinadns-ng
 rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/net/trojan-plus
+rm -rf feeds/packages/net/sing-box
 
 #rm -rf package/wwan/app/luci-app-usbmodem
 #rm -rf feeds/packages/net/adguardhome
