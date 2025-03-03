@@ -17,7 +17,7 @@ on:
       LAN_IP:
         description: 'Set LAN IP Address'
         required: true
-        default: '192.168.15.1'
+        default: '192.168.10.1'
       WIFI_DRIVER:
         description: 'Choose WiFi Driver'
         required: true
@@ -66,17 +66,17 @@ env:
   #默认主机名
   OWRT_NAME: RAX3000M
   #默认ip地址
-  OWRT_IP: 192.168.15.1
+  OWRT_IP: 192.168.10.1
   
   CONFIG_FILE: Config/.mtwifi-cfg.config
 
   ##237源码
-  OPENWRT_NAME: padavanonly
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+  #OPENWRT_NAME: padavanonly
+  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
 
   
-  #OPENWRT_NAME: hanwckf
-  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  OPENWRT_NAME: hanwckf
+  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   
   UPLOAD_TAG_NAME: rax3000m
   REPO_BRANCH: openwrt-21.02
