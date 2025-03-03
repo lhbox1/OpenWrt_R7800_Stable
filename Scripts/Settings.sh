@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #删除冲突插件
-rm -rf $(find ./feeds/luci/ -type d -regex ".*\(openclash\|passwall\|ssr-plus\|alist\|easymesh\|adguardhome\).*")
+rm -rf $(find ./feeds/luci/ -type d -regex ".*\(openclash\|passwall\|lucky\|alist\|easymesh\|adguardhome\).*")
 rm -rf package/istore
-rm -rf feeds/packages/net/chinadns-ng
-rm -rf feeds/packages/net/xray-core
-rm -rf feeds/packages/net/trojan-plus
-rm -rf feeds/packages/net/v2ray-plugin
-rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/lucky
+
+#rm -rf feeds/packages/net/trojan-plus
+#rm -rf feeds/packages/net/v2ray-plugin
+#rm -rf feeds/packages/net/sing-box
 
 #rm -rf package/wwan/app/luci-app-usbmodem
 #rm -rf feeds/packages/net/adguardhome
