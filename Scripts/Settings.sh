@@ -24,5 +24,5 @@ sed -i "/timezone='.*'/a\\\t\t\set system.@system[-1].zonename='Asia/Shanghai'" 
 #添加插件
 git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
 git clone https://github.com/shuishihan/luci-app-easymesh.git package/luci-app-easymesh
-git clone https://github.com/lhbox1/pakg.git package/pakggg
+# git clone https://github.com/lhbox1/pakg.git package/pakggg
 git clone --depth=1 --single-branch --branch "main" https://github.com/lmq8267/luci-app-alist ./package/luci-app-alist
