@@ -187,8 +187,8 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/Scripts/Extras.sh
         # 需要编译openclash取消下面#
-        # cd package
-        # $GITHUB_WORKSPACE/Scripts/Plugins.sh
+        cd package
+        $GITHUB_WORKSPACE/Scripts/Plugins.sh
 
     - name: 设置WiFi驱动版本
       run: |
