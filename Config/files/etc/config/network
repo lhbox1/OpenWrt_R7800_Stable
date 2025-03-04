@@ -17,15 +17,15 @@ config device
 
 config device
 	option name 'lan1'
-	option macaddr 'ec:e7:c2:90:2f:7b'
+	option macaddr 'ec:e7:c2:90:2f:8b'
 
 config device
 	option name 'lan2'
-	option macaddr 'ec:e7:c2:90:2f:7b'
+	option macaddr 'ec:e7:c2:90:2f:9b'
 
 config device
 	option name 'lan3'
-	option macaddr 'ec:e7:c2:90:2f:7b'
+	option macaddr 'ec:e7:c2:90:2f:0b'
 
 config interface 'lan'
 	option device 'br-lan'
