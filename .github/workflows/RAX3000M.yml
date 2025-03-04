@@ -137,8 +137,6 @@ jobs:
         fi
         #是否删除网络配置 #
         # rm -rf openwrt/files/etc/config/network
-        
-        mv Config/distfeeds.conf openwrt/files/etc/opkg/distfeeds.conf
         chmod +x Scripts/Plugins.sh
         chmod +x Scripts/Extras.sh
         cd openwrt
