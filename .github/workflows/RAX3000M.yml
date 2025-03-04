@@ -45,7 +45,7 @@ env:
   OWRT_THEME: argon
   #默认主机名
   OWRT_NAME: RAX3000M
-  #默认ip地址
+  #默认ip地址 删除网络配置才生效
   OWRT_IP: 192.168.10.1
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: Config/feeds.conf.default
