@@ -71,12 +71,12 @@ env:
   CONFIG_FILE: Config/.mtwifi-cfg.config
 
   ##237源码
-  #OPENWRT_NAME: padavanonly
-  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+  OPENWRT_NAME: padavanonly
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
 
   
-  OPENWRT_NAME: hanwckf
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  #OPENWRT_NAME: hanwckf
+  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   
   UPLOAD_TAG_NAME: rax3000m
   REPO_BRANCH: openwrt-21.02
@@ -180,7 +180,8 @@ jobs:
         mv Config/network openwrt/files/etc/config/network
         fi
         #不需要网络配置取消 #
-        rm -rf openwrt/files/etc/config/network
+        #rm -rf openwrt/files/etc/config/network
+        
         chmod +x Scripts/Plugins.sh
         chmod +x Scripts/Extras.sh
         cd openwrt
