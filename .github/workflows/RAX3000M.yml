@@ -134,8 +134,10 @@ jobs:
         echo "CONFIG_PACKAGE_luci-app-samba4=n" >> openwrt/.config
         
         mv Config/network openwrt/files/etc/config/network
-        #rm -rf openwrt/files/etc/config/network
         fi
+        #是否删除网络配置 #
+        rm -rf openwrt/files/etc/config/network
+        
         chmod +x Scripts/Plugins.sh
         chmod +x Scripts/Extras.sh
         cd openwrt
