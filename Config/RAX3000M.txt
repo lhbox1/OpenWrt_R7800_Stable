@@ -1,20 +1,23 @@
 #想定制自己想要的插件随意！
 #路由器插件自定义区Applications
+
 CONFIG_PACKAGE_luci-app-wrtbwmon=n
 # CONFIG_PACKAGE_luci-app-usbmodem=n
 CONFIG_PACKAGE_luci-app-quickstart=n
 CONFIG_PACKAGE_luci-app-store=n
 #
-#CONFIG_PACKAGE_luci-app-samba4=y
-#CONFIG_DEFAULT_luci-app-samba4=y
-#CONFIG_PACKAGE_samba4-libs=y
-#CONFIG_PACKAGE_samba4-server=y
-#CONFIG_SAMBA4_SERVER_WSDD2=y
-#CONFIG_SAMBA4_SERVER_NETBIOS=y
-#CONFIG_SAMBA4_SERVER_AVAHI=y
-#CONFIG_SAMBA4_SERVER_VFS=y
 
-#CONFIG_PACKAGE_luci-app-ksmbd=n
+CONFIG_PACKAGE_luci-app-ksmbd=n
+
+CONFIG_PACKAGE_luci-app-samba4=y
+CONFIG_DEFAULT_luci-app-samba4=y
+CONFIG_PACKAGE_samba4-libs=y
+CONFIG_PACKAGE_samba4-server=y
+CONFIG_SAMBA4_SERVER_WSDD2=y
+CONFIG_SAMBA4_SERVER_NETBIOS=y
+CONFIG_SAMBA4_SERVER_AVAHI=y
+CONFIG_SAMBA4_SERVER_VFS=y
+
 
 
 CONFIG_PACKAGE_luci-app-adguardhome=y
