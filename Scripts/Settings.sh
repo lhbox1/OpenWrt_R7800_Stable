@@ -5,12 +5,15 @@ rm -rf $(find ./feeds/luci/ -type d -regex ".*\(openclash\|passwall\|lucky\|alis
 rm -rf package/istore
 rm -rf feeds/packages/net/lucky
 
-#rm -rf feeds/packages/net/trojan-plus
-#rm -rf feeds/packages/net/v2ray-plugin
-#rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/trojan-plus
+rm -rf feeds/packages/net/v2ray-plugin
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/hysteria
+rm -rf feeds/packages/net/xray-core
+rm -rf feeds/packages/net/chinadns-ng
 
 #rm -rf package/wwan/app/luci-app-usbmodem
-#rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/packages/net/adguardhome
 ####
 #修改默认IP地址
 sed -i "s/192\.168\.[0-9]*\.[0-9]*/$OWRT_IP/g" ./package/base-files/files/bin/config_generate
