@@ -16,6 +16,8 @@ rm -rf feeds/packages/net/adguardhome
 ####
 #修改默认IP地址
 sed -i "s/192\.168\.[0-9]*\.[0-9]*/$OWRT_IP/g" ./package/base-files/files/bin/config_generate
+#修改immortalwrt.lan关联IP
+sed -i "s/192\.168\.[0-9]*\.[0-9]*/$OWRT_IP/g" $(find feeds/luci/modules/luci-mod-system -type f -name "flash.js")
 #修改默认主题
 #sed -i "s/luci-theme-bootstrap/luci-theme-$OWRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
 #修改默认主机名
