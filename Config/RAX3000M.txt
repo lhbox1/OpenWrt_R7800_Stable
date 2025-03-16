@@ -2,7 +2,7 @@
 #路由器插件自定义区Applications
 
 CONFIG_PACKAGE_luci-app-wrtbwmon=n
-# CONFIG_PACKAGE_luci-app-usbmodem=n
+CONFIG_PACKAGE_luci-app-usbmodem=y
 CONFIG_PACKAGE_luci-app-quickstart=n
 CONFIG_PACKAGE_luci-app-store=n
 #
