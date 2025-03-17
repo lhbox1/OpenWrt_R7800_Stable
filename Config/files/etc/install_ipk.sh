@@ -9,5 +9,7 @@ sleep 1
 sed -i "s/install_ipk.sh/wan_check.sh/g" /etc/crontabs/root
 #重启定时命令
 /etc/init.d/cron restart
+
+ln -s /etc/AdGuardHome /usr/bin/AdGuardHome
 rm -rf /etc/ipk
 rm -rf /etc/install_ipk.sh
