@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #删除冲突插件
-rm -rf $(find ./feeds/luci/ -type d -regex ".*\(openclash\|passwall\|lucky\|alist\|easymesh\|adguardhome\|ksmbd\).*")
+rm -rf $(find ./feeds/luci/ -type d -regex ".*\(openclash\|passwall\|ssr-plus\|lucky\|alist\|easymesh\|adguardhome\|ksmbd\).*")
 rm -rf package/istore
 rm -rf feeds/packages/net/lucky
 
