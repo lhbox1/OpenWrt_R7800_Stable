@@ -68,7 +68,8 @@ env:
   #默认ip地址
   OWRT_IP: 192.168.15.1
   
-  CONFIG_FILE: Config/.mtwifi-cfg.config
+  #CONFIG_FILE: Config/.mtwifi-cfg.config
+  CONFIG_FILE: Config/mt7981-ax3000-mtwifi-cfg.config
 
   ##237源码
   OPENWRT_NAME: padavanonly
