@@ -46,7 +46,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/l
 
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
 
-git clone -b master https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
 git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
 git clone https://github.com/shuishihan/luci-app-easymesh.git package/luci-app-easymesh
