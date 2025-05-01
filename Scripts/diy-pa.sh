@@ -9,12 +9,12 @@ rm -rf luci-app-lucky-2.15.7
 
 #下载使用master版本passwall
 #wget -qO- https://github.com/xiaorouji/openwrt-passwall/archive/main.zip > temp1.zip
-wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall/zip/refs/tags/25.4.20-1 > temp1.zip
+wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall/zip/refs/tags/25.5.1-2 > temp1.zip
 unzip -q temp1.zip
 rm -rf feeds/luci/applications/luci-app-passwall
-cp -r openwrt-passwall-25.4.20-1/luci-app-passwall package/
+cp -r openwrt-passwall-25.5.1-2/luci-app-passwall package/
 rm -rf temp1.zip
-rm -rf openwrt-passwall-25.4.20-1
+rm -rf openwrt-passwall-25.5.1-2
 
 #下载使用helloworld依赖库ssr
 #wget -qO- https://github.com/fw876/helloworld/archive/master.zip > temp2.zip
