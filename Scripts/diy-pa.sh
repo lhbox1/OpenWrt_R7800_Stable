@@ -8,6 +8,11 @@ rm -rf luci-app-lucky-2.15.7
 
 
 #下载使用master版本passwall
+
+
+rm -rf /feeds/packages/net/smartdns/Makefile
+cp -r Makefile /feeds/packages/net/smartdns/
+
 #wget -qO- https://github.com/xiaorouji/openwrt-passwall/archive/main.zip > temp1.zip
 wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall/zip/refs/tags/25.4.20-1 > temp1.zip
 unzip -q temp1.zip
