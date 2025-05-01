@@ -53,6 +53,12 @@ export GEO_MMDB=https://github.com/alecthw/mmdb_china_ip_list/raw/release/lite/C
 export GEO_SITE=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geosite.dat
 #export GEO_IP=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geoip.dat
 
+
+export CLASHAA=https://github.com/lhbox1/lhatv/raw/main/openclash
+curl -sfL -o ./OpenClash/luci-app-openclash/root/etc/config/openclash $CLAHAA
+
+
+
 cd ./OpenClash/luci-app-openclash/root/etc/openclash
 curl -sfL -o ./Country.mmdb $GEO_MMDB
 #curl -sfL -o ./GeoSite.dat $GEO_SITE
