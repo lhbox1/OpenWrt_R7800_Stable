@@ -55,7 +55,7 @@ export GEO_SITE=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geos
 
 
 export CLASHAA=https://github.com/lhbox1/lhatv/raw/main/openclash
-curl -sfL -o ./OpenClash/luci-app-openclash/root/etc/config/openclash $CLAHAA
+curl -sfL -o ./OpenClash/luci-app-openclash/root/etc/config/openclash $CLASHAA
 
 
 
