@@ -37,7 +37,7 @@ env:
   ##237源码
   #OPENWRT_NAME: padavanonly
   #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
-  #CONFIG_FILE: Config/RAX3000M.txt
+  #CONFIG_FILE: Config/mt7981-ax3000-mtwifi-cfg.config
   
   UPLOAD_TAG_NAME: rax3000m
   #默认主题
@@ -147,10 +147,11 @@ jobs:
         
     - name: 使用nx30pro的高功率eeprom
       run: |
+        if [[ $REPO_URL == *"padavanonly"* ]] ; then
         cp eeprom/nx30pro_eeprom.bin openwrt/package/mtk/drivers/mt_wifi/files/mt7981-default-eeprom/MT7981_iPAiLNA_EEPROM.bin
         #sed -i 's/caldata_extract_mmc/# caldata_extract_mmc/' openwrt/target/linux/mediatek/mt7981/base-files/lib/preinit/90_extract_caldata
         #sed -i 's#./files/mt7981-default-eeprom/MT7981_iPAiLNA_EEPROM.bin##' openwrt/package/mtk/drivers/mt_wifi/Makefile
-        
+        fi
         
         
     - name: 使用luci-app-mtk无线配置
