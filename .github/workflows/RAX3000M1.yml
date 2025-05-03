@@ -70,14 +70,14 @@ env:
   
 
   ##237源码
-  #OPENWRT_NAME: padavanonly
-  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
-  #CONFIG_FILE: Config/mt7981-ax3000-mtwifi-cfg.config
+  OPENWRT_NAME: padavanonly
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+  CONFIG_FILE: Config/mt7981-ax3000-mtwifi-cfg.config
 
   
-  OPENWRT_NAME: hanwckf
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
-  CONFIG_FILE: Config/hanwckf.config
+  #OPENWRT_NAME: hanwckf
+  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  #CONFIG_FILE: Config/hanwckf.config
   
   UPLOAD_TAG_NAME: rax3000m
   REPO_BRANCH: openwrt-21.02
