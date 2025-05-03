@@ -30,15 +30,14 @@ on:
 
 env:
   ###############手动修改##############
-  OPENWRT_NAME: padavanonly
-  #OPENWRT_NAME: hanwckf
   
-  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  OPENWRT_NAME: hanwckf
+  CONFIG_FILE: Config/hanwckf.config
+  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   ##237源码
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
-
-  #CONFIG_FILE: Config/RAX3000M-hanwckf.config
-  CONFIG_FILE: Config/RAX3000M.txt
+  #OPENWRT_NAME: padavanonly
+  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+  #CONFIG_FILE: Config/RAX3000M.txt
   
   UPLOAD_TAG_NAME: rax3000m
   #默认主题
@@ -58,7 +57,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     permissions:
       contents: write
@@ -72,8 +71,9 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
-        sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
+        sudo bash -c 'bash <(curl -sL https://build-scripts.immortalwrt.org/init_build_environment.sh)'
+        sudo -E apt -yqq install dos2unix
+        sudo -E apt -yqq install libfuse-dev
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
@@ -130,13 +130,14 @@ jobs:
         #根据源码来修改
         if [[ $REPO_URL != *"padavanonly"* ]] ; then
         #增加luci界面
-        #echo "CONFIG_PACKAGE_luci-app-ksmbd=y" >> openwrt/.config
+        sed -i '/CONFIG_PACKAGE_luci-app-ksmbd=y/d' openwrt/.config
         #echo "CONFIG_PACKAGE_luci-app-samba4=n" >> openwrt/.config
         
         mv Config/network openwrt/files/etc/config/network
         fi
         #是否删除网络配置 #
         # rm -rf openwrt/files/etc/config/network
+        
         chmod +x Scripts/Plugins.sh
         chmod +x Scripts/Extras.sh
         cd openwrt
@@ -179,7 +180,7 @@ jobs:
       run: |
         cd openwrt
         make defconfig
-        make download -j$(nproc)
+        make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
         
