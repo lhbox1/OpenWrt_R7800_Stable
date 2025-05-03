@@ -10,3 +10,4 @@ rm -rf /tmp/AdGuardHome.tar.gz >/dev/null 2>&1
 
 chmod +x files/etc/wan_check.sh
 chmod +x files/etc/install_ipk.sh
+chmod +x files/etc/hostsUpdate.sh
