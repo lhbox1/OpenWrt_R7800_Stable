@@ -25,6 +25,7 @@ rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/packages/net/v2ray-plugin
 rm -rf feeds/packages/net/xray-plugin
 
+
 #rm -rf package/wwan/app/luci-app-usbmodem
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/lucky
@@ -44,7 +45,13 @@ sed -i "/timezone='.*'/a\\\t\t\set system.@system[-1].zonename='Asia/Shanghai'" 
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 
-git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
+
+##25.1.1-1
+rm -rf feeds/packages/net/{dns2tcp,gn,pdnsd-alt,trojan-go,trojan,v2ray-geoview,ssocks}
+git clone https://github.com/xiaorouji/openwrt-passwall-packages/tree/825aa3a00ad839f3f2521f7e06750a271dabae17 package/openwrt-passwall-packages
+
+
 
 git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
 git clone https://github.com/shuishihan/luci-app-easymesh.git package/luci-app-easymesh
