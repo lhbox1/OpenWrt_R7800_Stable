@@ -49,8 +49,9 @@ git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/l
 
 ##25.1.1-1
 rm -rf feeds/packages/net/{dns2tcp,gn,pdnsd-alt,trojan-go,trojan,v2ray-geoview,ssocks}
-#git clone https://github.com/xiaorouji/openwrt-passwall-packages/tree/825aa3a00ad839f3f2521f7e06750a271dabae17 package/openwrt-passwall-packages
-
+wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall-packages/zip/825aa3a00ad839f3f2521f7e06750a271dabae17 > aaaaa.zip
+unzip -q aaaaa.zip
+rm -rf aaaaa.zip
 
 
 git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
