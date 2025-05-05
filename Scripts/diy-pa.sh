@@ -16,7 +16,8 @@ cp -r openwrt-passwall-25.1.1-1/luci-app-passwall package/
 rm -rf temp1.zip
 rm -rf openwrt-passwall-25.1.1-1
 
-
+wget -qO- https://codeload.github.com/xiaorouji/openwrt-passwall-packages/zip/825aa3a00ad839f3f2521f7e06750a271dabae17 > aaaaa.zip
+unzip -q aaaaa.zip
 
 git clone --depth=1 --single-branch --branch "master" https://github.com/kenzok8/openwrt-packages.git ./small-openwrt-packages
 cp -r small-openwrt-packages/luci-app-smartdns package/
