@@ -31,13 +31,13 @@ on:
 env:
   ###############手动修改##############
   
-  #OPENWRT_NAME: hanwckf
-  #CONFIG_FILE: Config/hanwckf.config
-  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  OPENWRT_NAME: hanwckf
+  CONFIG_FILE: Config/hanwckf.config
+  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   ##237源码
-  OPENWRT_NAME: padavanonly
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
-  CONFIG_FILE: Config/mt7981-ax3000-mtwifi-cfg.config
+  #OPENWRT_NAME: padavanonly
+  #REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x.git
+  #CONFIG_FILE: Config/mt7981-ax3000-mtwifi-cfg.config
 
   
   UPLOAD_TAG_NAME: rax3000m
