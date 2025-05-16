@@ -131,7 +131,7 @@ jobs:
         #根据源码来修改
         if [[ $REPO_URL != *"padavanonly"* ]] ; then
         #增加luci界面
-        sed -i '/CONFIG_PACKAGE_luci-app-ksmbd=y/d' openwrt/.config
+        #sed -i '/CONFIG_PACKAGE_luci-app-ksmbd=y/d' openwrt/.config
         #echo "CONFIG_PACKAGE_luci-app-samba4=n" >> openwrt/.config
         rm -rf openwrt/files/etc/config/ksmbd
         rm -rf openwrt/files/etc/config/network
@@ -141,8 +141,8 @@ jobs:
         #是否删除网络配置 #
         # rm -rf openwrt/files/etc/config/network
         ##padavanonly使用samba4时否则用#取消
-        rm -rf openwrt/files/etc/config/ksmbd
-        [ -e Config/samba4 ] && mv Config/samba4 openwrt/files/etc/config/samba4
+        #rm -rf openwrt/files/etc/config/ksmbd
+        #[ -e Config/samba4 ] && mv Config/samba4 openwrt/files/etc/config/samba4
 
         
         chmod +x Scripts/Plugins.sh
