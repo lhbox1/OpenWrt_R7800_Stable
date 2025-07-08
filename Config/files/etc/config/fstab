@@ -9,6 +9,6 @@ config global
 
 config mount
 	option target '/mnt/sda1'
-	option uuid 'FA40-BDBE'
+	option uuid '6E3B-0448'
 	option enabled '1'
 
