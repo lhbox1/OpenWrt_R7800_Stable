@@ -41,7 +41,7 @@ config interface 'wan'
 	option device 'wan'
 	option proto 'pppoe'
 	option username 'nbyza67579792'
-	option password '123456'
+	option password 'fyq118'
 	option ipv6 'auto'
 
 config interface 'wan6'
