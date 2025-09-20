@@ -1,10 +1,19 @@
 #下载使用lucky
-wget  -qO- https://codeload.github.com/gdy666/luci-app-lucky/zip/refs/tags/v2.19.4 > lucky.zip
+wget  -qO- https://codeload.github.com/gdy666/luci-app-lucky/zip/refs/tags/v2.15.7 > lucky.zip
 unzip -q lucky.zip
-cp -r luci-app-lucky-2.19.4/luci-app-lucky package/
-cp -r luci-app-lucky-2.19.4/lucky package/
+cp -r luci-app-lucky-2.15.7/luci-app-lucky package/
+# cp -r luci-app-lucky-2.15.7/lucky package/
 rm -rf lucky.zip
+rm -rf luci-app-lucky-2.15.7
+
+wget  -qO- https://codeload.github.com/gdy666/luci-app-lucky/zip/refs/tags/v2.19.4 > lucky2.zip
+unzip -q lucky2.zip
+cp -r luci-app-lucky-2.19.4/lucky package/
+rm -rf lucky2.zip
 rm -rf luci-app-lucky-2.19.4
+
+
+
 
 
 #下载使用master版本passwall
