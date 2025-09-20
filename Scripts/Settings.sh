@@ -47,6 +47,12 @@ git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/l
 
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
 
+rm -rf package/openwrt-passwall-packages/xray-core/Makefile
+
+curl -sfL -o ./package/openwrt-passwall-packages/xray-core/Makefile https://raw.githubusercontent.com/lhbox1/lhatv/refs/heads/main/Makefile
+
+
+
 git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
 git clone https://github.com/shuishihan/luci-app-easymesh.git package/luci-app-easymesh
 # git clone https://github.com/lhbox1/pakg.git package/pakggg
